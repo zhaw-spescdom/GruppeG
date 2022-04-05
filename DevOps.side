@@ -1,0 +1,260 @@
+{
+  "id": "49f2ec7e-244a-4e72-9c9d-ac680e325b9c",
+  "version": "2.0",
+  "name": "DevOps",
+  "url": "https://www.daydeal.ch/",
+  "tests": [{
+    "id": "c72c3886-a22e-4215-8691-f9d373bdcda9",
+    "name": "Wikipedia",
+    "commands": [{
+      "id": "89501c7e-8350-468f-a662-3a1ca561d3ec",
+      "comment": "",
+      "command": "open",
+      "target": "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0981f9a6-e396-4146-862b-16f039baf2a5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b01971b1-2631-41a2-8b10-55a969e943f7",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "409b1863-8573-498a-bf13-bfe37c01b441",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Corona"
+    }, {
+      "id": "f676104f-57fc-4ffd-9dff-ec972933e2c9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_DOWN}"
+    }, {
+      "id": "d6ed83c7-5976-42fe-b817-27389702379e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9c3a6913-8ac5-49aa-b1d7-7e63007e15e6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=COVID-19",
+      "targets": [
+        ["linkText=COVID-19", "linkText"],
+        ["css=.mw-parser-output > ul:nth-child(2) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'COVID-19')]", "xpath:link"],
+        ["xpath=//div[@id='mw-content-text']/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/COVID-19')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'COVID-19')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eaf2bb03-fcab-45b3-b38e-778c2a8dbf66",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'COVID-19')]", "xpath:innerText"]
+      ],
+      "value": "COVID-19"
+    }]
+  }, {
+    "id": "1e52898c-70fa-417b-be6c-d9722a90c71a",
+    "name": "ZHAW",
+    "commands": [{
+      "id": "b3481bf1-622e-47eb-b3d9-b81975443ead",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.zhaw.ch/de/hochschule/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbb980b2-8c79-4068-8670-e5605a7da1a7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d513c712-4bc7-41a9-979e-a0c6090430e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#search-icon > .glyphicon",
+      "targets": [
+        ["css=#search-icon > .glyphicon", "css:finder"],
+        ["xpath=//a[@id='search-icon']/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0de38d4-15d3-4caa-b757-0ec216a55dc6",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=gsasearch",
+      "targets": [
+        ["id=gsasearch", "id"],
+        ["name=gsasearch", "name"],
+        ["css=#gsasearch", "css:finder"],
+        ["xpath=//input[@id='gsasearch']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form-top']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e5ab7737-3083-4685-b486-b0aab8884911",
+    "name": "Daydeal",
+    "commands": [{
+      "id": "5b9987d1-c0a6-419a-82f6-44b2f102d36b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.daydeal.ch/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edac28a9-7e3d-48d1-b4ed-417e67f57671",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.product-img-main-pic",
+      "targets": [
+        ["css=.product-img-main-pic", "css:finder"],
+        ["xpath=//img[@alt='Full-HD-Webcam']", "xpath:img"],
+        ["xpath=//div[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a53022ca-6858-48ce-a4c6-ee6b531e7285",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2b694be-29d1-48ff-ba06-4252e96905e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-pricing__title",
+      "targets": [
+        ["css=.product-pricing__title", "css:finder"],
+        ["xpath=//a/span[2]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5707",
+      "windowTimeout": 2000
+    }, {
+      "id": "03d06b56-c1ab-4f82-a5f4-f3bc75e0b253",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5707}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2da943a2-3c57-4b4d-947d-2acfd727d189",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5707}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a2afd79-4485-434f-9c8e-2eb4083d44f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=cart-quantity-1326093",
+      "targets": [
+        ["id=cart-quantity-1326093", "id"],
+        ["name=cart-quantity-1326093", "name"],
+        ["css=#cart-quantity-1326093", "css:finder"],
+        ["xpath=//input[@id='cart-quantity-1326093']", "xpath:attributes"],
+        ["xpath=//main[@id='b2c-checkout-container']/div/div/div/div/div/table/tbody/tr/td[4]/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "248e9af4-2f35-4542-b735-c79fc91bbf33",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=cart-quantity-1326093",
+      "targets": [
+        ["id=cart-quantity-1326093", "id"],
+        ["name=cart-quantity-1326093", "name"],
+        ["css=#cart-quantity-1326093", "css:finder"],
+        ["xpath=//input[@id='cart-quantity-1326093']", "xpath:attributes"],
+        ["xpath=//main[@id='b2c-checkout-container']/div/div/div/div/div/table/tbody/tr/td[4]/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "42be76e0-4fe4-4f9a-ac9b-09c110e4cad7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.bcaA8Ckr",
+      "targets": [
+        ["css=.bcaA8Ckr", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//main[@id='b2c-checkout-container']/div/div/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Zur Kasse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3287ea95-170d-4e45-9090-0c2c09b0459b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.autoscout24.ch/", "https://www.immoscout24.ch/de", "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite", "https://www.zhaw.ch/de/hochschule/", "https://www.daydeal.ch/"],
+  "plugins": []
+}
